@@ -33,7 +33,7 @@ function pop(arr){
 // pop elements off the stack starting from the top/end
         arr.pop(); 
     return arr;
-    
+
 }
 
 
@@ -71,7 +71,7 @@ const Stack = function() {
     }
 }
 
-var myStack = new Stack();
+const myStack = new Stack();
 
 myStack.push(1);
 myStack.push(2);
