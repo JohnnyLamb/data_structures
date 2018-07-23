@@ -41,16 +41,16 @@ function size(arr){
 }
 
 function peek(arr){
-    return arr[arr.length-1]
+    return arr[arr.length-1];
 }
 
-push(browsingHistory,2333)
-pop(browsingHistory)
-size(browsingHistory)
-push(browsingHistory,334234234)
-push(browsingHistory,'at the end')
-console.log(size(browsingHistory))
-console.log(peek(browsingHistory))
+push(browsingHistory,2333);
+pop(browsingHistory);
+size(browsingHistory);
+push(browsingHistory,334234234);
+push(browsingHistory,'at the end');
+console.log(size(browsingHistory));
+console.log(peek(browsingHistory));
 
 
 
@@ -77,7 +77,7 @@ const Stack = function() {
         return result;
     }
     
-    this.size = function() {
+    this.length = function() {
         return this.count;
     }
     
@@ -95,7 +95,7 @@ const myStack = new Stack();
 // console.log(myStack.pop());
 // console.log(myStack.peek());
 // myStack.push("testing");
-// console.log(myStack.size());
+// console.log(myStack.length());
 // console.log(myStack.peek());
 // console.log(myStack.pop());
 // console.log(myStack.peek());
