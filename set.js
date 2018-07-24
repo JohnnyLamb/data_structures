@@ -1,6 +1,6 @@
 /* Sets */
 
-function mySet() {
+function customSet() {
     // the var collection will hold the set
     var collection = [];
     // this method will check for the presence of an element and return true or false
@@ -34,7 +34,7 @@ function mySet() {
     };
     // this method will return the union of two sets
     this.union = function(otherSet) {
-        var unionSet = new mySet();
+        var unionSet = new customSet();
         var firstSet = this.values();
         var secondSet = otherSet.values();
         firstSet.forEach(function(e){
@@ -47,7 +47,7 @@ function mySet() {
     };
     // this method will return the intersection of two sets as a new set
     this.intersection = function(otherSet) {
-        var intersectionSet = new mySet();
+        var intersectionSet = new customSet();
         var firstSet = this.values();
         firstSet.forEach(function(e){
             if(otherSet.has(e)){
@@ -58,7 +58,7 @@ function mySet() {
     };
     // this method will return the difference of two sets as a new set
     this.difference = function(otherSet) {
-        var differenceSet = new mySet();
+        var differenceSet = new customSet();
         var firstSet = this.values();
         firstSet.forEach(function(e){
             if(!otherSet.has(e)){
@@ -75,8 +75,8 @@ function mySet() {
         });
     };
 }
-var setA = new mySet();  
-var setB = new mySet();  
+var setA = new customSet();  
+var setB = new customSet();  
 setA.add("a");  
 setB.add("b");  
 setB.add("c");  
