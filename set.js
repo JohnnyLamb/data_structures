@@ -3,7 +3,7 @@ function customSet(){
     // an array will hold the elements in the set
     let collection = [];
 
-    // the "has" method will check if the given set has an element or not, return true if if does and false if it does not
+    // the "has" method will check if the given set has an element or not, return true if it does and false if it does not
     this.has = function(element){
         return (collection.indexOf(element)!== -1);
     }
@@ -11,7 +11,7 @@ function customSet(){
     this.values = function(){
         return collection;
     }
-    // this method adds and element to a given set
+    // this method adds an element to a given set
     this.add = function(element){
         if(!this.has(element)){
             collection.push(element)
