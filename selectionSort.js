@@ -1,3 +1,5 @@
+// this is Selection Sort implement in Javascript. the runtime is O(n^2) which is not good.
+// below is a helper function to find the smallest element in a given array.
 function findLeast(arr){
     least = arr[0];
     leastIndex = 0;
