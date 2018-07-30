@@ -1,3 +1,4 @@
+// implement quick sort algorith for faster sorting that selection sort.
 let array = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
 function quickSort(array){
     if(array.length < 2){
