@@ -1,6 +1,6 @@
-// this is Selection Sort implement in Javascript. the runtime is O(n^2) which is not good.
+// this is Selection Sort implemented in Javascript. the runtime is O(n^2) which is not good.
 // below is a helper function to find the smallest element in a given array.
-function findLeast(arr){
+const findLeast = (arr) =>{
     least = arr[0];
     leastIndex = 0;
     for(let i = 0;i<=arr.length;i++){
@@ -11,7 +11,7 @@ function findLeast(arr){
     }
     return leastIndex;
 }
-function selectionSort(arr){
+const selectionSort = (arr) => {
     let arr2 = Array.from(arr);
     sortedArr = [];
     for(let i=0;i<arr.length;i++){
@@ -21,4 +21,4 @@ function selectionSort(arr){
     }
     return sortedArr;
 }
-console.log(selectionSort([5,3,6,2,10,7,3,4,5,6]))
+console.log(selectionSort([5,3,6,2,10,7,3,4,5,6]))  

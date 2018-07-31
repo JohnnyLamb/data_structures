@@ -1,5 +1,5 @@
 // implement a recursive summing function
-function sum(arr){
+const sum = (arr) => {
     if (arr.length <= 0){
       return 0;
     }
@@ -10,7 +10,7 @@ function sum(arr){
   console.log(sum([4,6,3]))
   
 //   implement factorial 5*4*3*2*1
-  function factorial(num){
+  const factorial = (num) => {
     if(num <=1){return num}
     else{
         return num*=factorial(num-1)
