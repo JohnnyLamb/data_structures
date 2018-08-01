@@ -1,5 +1,5 @@
 
-var myArray = [3, 0, 232, 5, -1, 4 ];
+let myArray = [3, 0, 232, 5, -1, 4 ];
 const quick_Sort = (arr) => {
  
   let less=[]
@@ -27,5 +27,5 @@ const quick_Sort = (arr) => {
 }
 
 console.log("Original array: " + myArray);
-var sortedArray = quick_Sort(myArray);
+let sortedArray = quick_Sort(myArray);
 console.log("Sorted array: " + sortedArray);
