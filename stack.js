@@ -20,12 +20,9 @@ length -- check the amount of elements in the STACK
 
 const browsingHistory = []; // this is our stack
 
-
 // put/push elements into a stack
 function push(arr,item){
-    
         arr.push(item);
-    
      return arr;
 }
 
@@ -33,7 +30,6 @@ function pop(arr){
 // pop elements off the stack starting from the top/end
         arr.pop(); 
     return arr;
-
 }
 
 function size(arr){
@@ -88,13 +84,13 @@ class Stack {
 
 const myStack = new Stack();
 
-// myStack.push(1);
-// myStack.push(2);
-// console.log(myStack.peek());
-// console.log(myStack.pop());
-// console.log(myStack.peek());
-// myStack.push("testing");
-// console.log(myStack.length());
-// console.log(myStack.peek());
-// console.log(myStack.pop());
-// console.log(myStack.peek());
+myStack.push(1);
+myStack.push(2);
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
+myStack.push("testing");
+console.log(myStack.length());
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
