@@ -22,20 +22,20 @@ class hashTable {
         this.add = (key, value) => {
             var index = hash(key, arrayLimit);
             if (storage[index] === undefined) {
-            storage[index] = [
-                [key, value]
-            ];
+                storage[index] = [
+                    [key, value]
+                ];
             } else {
-            var inserted = false;
-            for (var i = 0; i < storage[index].length; i++) {
-                if (storage[index][i][0] === key) {
-                storage[index][i][1] = value;
-                inserted = true;
+                var inserted = false;
+                for (var i = 0; i < storage[index].length; i++) {
+                    if (storage[index][i][0] === key) {
+                    storage[index][i][1] = value;
+                    inserted = true;
+                    }
                 }
-            }
-            if (inserted === false) {
-                storage[index].push([key, value]);
-            }
+                if (inserted === false) {
+                    storage[index].push([key, value]);
+                }
             }
         };
         // method to remove pair from the table
