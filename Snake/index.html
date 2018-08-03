@@ -23,7 +23,21 @@ xv=yv=0;
 trail = [];
 tail = 5
 
+var score = 0;
+var life = 3;
+var drawLife = function() {
+    ctx.font = "14px Advanced Pixel LCD-7";
+    // ctx.fillStyle = "#0095DD";
+    ctx.fillText("LIFE: " + life, 560, 40);
+};
+var drawscore = function() {
+    ctx.font = "14px Advanced Pixel LCD-7";
+    // ctx.fillStyle = "#0095DD";
+    ctx.fillText("Score: " + score, 8, 40);
+};
+
 function game(){
+    drawLife()
     px+=xv;
     py+=yv;
 
@@ -45,19 +59,24 @@ function game(){
 
      ctx.fillStyle = "green";
      for(let i=0;i<trail.length;i++){
+        drawscore()
+       
         ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2)
         if(trail[i].x===px && trail[i].y===py){
             tail = 5;
         }
      }
-
+    
      trail.push({x:px,y:py})
      while(trail.length>tail){
+        
         trail.shift()
      }
 
      if(ax===px && ay===py){
             tail++;
+            score++;
+           
         ax = Math.floor(Math.random()*tc)
         ay = Math.floor(Math.random()*tc)
         }
