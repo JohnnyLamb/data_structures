@@ -41,4 +41,4 @@ const quickSort = (array) => {
 
 }
 
-binarySearch(quickSort(array),10)
+console.log(binarySearch(quickSort(array),10))
