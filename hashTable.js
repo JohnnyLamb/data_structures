@@ -20,14 +20,14 @@ class hashTable {
         }
         // method to add key:value pair to the hashTable
         this.add = (key, value) => {
-            var index = hash(key, arrayLimit);
+            let index = hash(key, arrayLimit);
             if (storage[index] === undefined) {
                 storage[index] = [
                     [key, value]
                 ];
             } else {
                 var inserted = false;
-                for (var i = 0; i < storage[index].length; i++) {
+                for (let i = 0; i < storage[index].length; i++) {
                     if (storage[index][i][0] === key) {
                     storage[index][i][1] = value;
                     inserted = true;
