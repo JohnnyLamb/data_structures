@@ -26,7 +26,7 @@ class hashTable {
                     [key, value]
                 ];
             } else {
-                var inserted = false;
+                let inserted = false;
                 for (let i = 0; i < storage[index].length; i++) {
                     if (storage[index][i][0] === key) {
                     storage[index][i][1] = value;
